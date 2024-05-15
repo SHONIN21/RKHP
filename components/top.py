@@ -1,5 +1,6 @@
 import streamlit as st
 from .translations import translations 
+import os
 
 def top(language):
     texts = translations[language]
@@ -9,7 +10,7 @@ def top(language):
         st.markdown("<br>", unsafe_allow_html=True)
         st.write(texts["top1"])
     with col2:
-        st.image('/img/topRight.png', width=400)
+        st.image('../img/topRight.png', width=400)
     st.markdown('---')
     
     
