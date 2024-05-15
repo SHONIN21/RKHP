@@ -1,6 +1,5 @@
 import streamlit as st
 from .translations import translations 
-import os
 
 def top(language):
     texts = translations[language]
